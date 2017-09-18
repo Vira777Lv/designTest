@@ -14,7 +14,6 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  /*padding: 0 15px;*/
 }
 
 /*================================
@@ -35,49 +34,6 @@ img {
   width: 100%;
 }
 
-.main-menu,
-.social-icon,
-.lang-switch {
-  display: flex;
-  align-items: center;
-}
-
-.lang-switch {
-  margin-left: -15px;
-}
-
-.lang-switch-item {
-  padding: 0 10px 0 0;
-}
-
-.lang-switch-item:last-child {
-  padding-right: 0;
-}
-
-.lang-switch-item img {
-  border-radius: 5px;
-  border: 1px solid #d4dadf;
-  max-width: 26px;
-  max-height: 26px;
-  height: 100%;
-  width: 100%;
-}
-
-.social-icon {
-  margin-right: 30px;
-}
-
-.social-icon-item img {
-  padding-right: 7px;
-  max-width: 36px;
-  height: 100%;
-  width: 100%;
-}
-
-.social-icon-item:last-child {
-  padding-right: 0;
-}
-
 .main-menu-item {
   padding: 10px 13px;
 }
@@ -94,8 +50,47 @@ img {
   white-space: nowrap
 }
 
-.main-menu-item a:hover {
-  border-bottom: 1px solid #666f7b;
+.main-menu,
+.social-icon,
+.lang-switch {
+  display: flex;
+  align-items: center;
+}
+
+.social{
+  margin-right: 10px;
+}
+
+.lang-switch-item {
+  padding: 0 10px 0 0;
+}
+
+.lang-switch-item:last-child {
+  padding-right: 0;
+}
+
+.lang-switch-item img {
+  border-radius: 5px;
+  border: 1px solid #d4dadf;
+  max-width: 30px;
+  max-height: 26px;
+}
+
+.lang-switch-item img:hover,
+.lang-switch-item img:active {
+  border: 2px solid #36a313;
+}
+
+.social-icon-item {
+  padding-right: 7px;
+}
+
+.social-icon-item:first-child {
+  padding-right: 3px;
+}
+
+.social-icon-item img:last-child {
+  padding-right: 0;
 }
 
 .header-bottom{
@@ -137,7 +132,7 @@ img {
 .work-time {
   position: relative;
   margin-top: 14px;
-  padding-left: 18px;
+  padding-left: 22px;
 }
 
 .work-time:before {
@@ -145,12 +140,15 @@ img {
   position: absolute;
   left: 0;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -12px;
   background: url(../img/time.png) no-repeat center / cover;
-  width: 13px;
-  height: 20px;
-  display: inline-block;
-  vertical-align: middle;
+  width: 15px;
+  height: 23px;
+}
+
+.contacts-part-2 {
+  display: flex;
+  align-items: center;
 }
 
 .main-contact {
@@ -162,7 +160,7 @@ img {
 }
 
 .messenger-contacts {
-  display: inline-block;
+  display: block;
   border: 1px solid #feefaa;
   border-radius: 3px;
   margin-bottom: 10px;
@@ -175,7 +173,7 @@ img {
 .telegram,
 .whatsApp,
 .icq {
-  display: inline-block;
+  display: inline-flex;
   font-weight: 600;
   margin: 3px 12px;
 }
@@ -212,7 +210,7 @@ img {
 
 .icq:before {
   content: '';
-  margin-right: 9px;
+  margin-right: 10px;
   background: url(../img/icon-icq.png) no-repeat center / cover;
   width: 20px;
   height: 20px;
@@ -241,7 +239,6 @@ img {
 }
 
 .reset-pswd span {
-  /*color: #4c5867;*/
   text-decoration-line: underline;
   margin: 0 5px;
 }
@@ -328,6 +325,7 @@ img {
   background: transparent;
   border-left: 1px solid #a0a9b5;
   border-radius: unset;
+  cursor: pointer;
 }
 
 .btn-currency span {
@@ -383,16 +381,16 @@ label {
 }
 
 .limit {
+  margin-top: 14px;
   margin-left: 25px;
 }
 
 .limit p {
-  font-size: 16px;
   margin: 0;
 }
 
 .limit span {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin-right: 8px;
 }
@@ -401,7 +399,6 @@ label {
   position: relative;
   padding-left: 9px;
   margin-left: 10px;
-  font-size: 16px;
   text-decoration: underline;
   color: #5dbd66;
   font-weight: 600;
@@ -460,7 +457,7 @@ label {
   background: #f7f7f7;
   border: 1px solid #d2dae1;
   border-radius: 3px;
-  padding: 10px;
+  padding: 15px;
   box-shadow: 0 3px 0 0 rgba(98, 112, 128, .07);
   margin: 40px 0 20px;
 }
@@ -489,7 +486,7 @@ label {
 }
 
 .operators-online span {
-  font-size: 18px;
+  font-size: 16px;
   white-space: nowrap;
   margin-bottom: 5px;
 }
@@ -518,7 +515,7 @@ label {
   background: #f7f7f7;
   border: 1px solid #d2dae1;
   border-radius: 3px;
-  padding: 10px;
+  padding: 15px;
   box-shadow: 0 3px 0 0 rgba(98, 112, 128, .07);
   margin: 40px 0 10px;
 }
@@ -574,7 +571,8 @@ label {
 
 .partnership p {
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
+  margin: 0;
 }
 
 .last-exchange h4 {
@@ -586,22 +584,28 @@ label {
 .last-exchange p {
   color: #0085b8;
   font-style: italic;
+  margin-bottom: 20px;
 }
 
 .payment {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+}
+
+.payment img {
+  width: 30px;
 }
 
 .payment span {
   font-weight: 600;
   border-bottom: 2px solid #b7bbbf;
-  margin: 0 18px;
+  margin-left: 10px;
 }
 
 .yandex {
   position: relative;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 .yandex:after {
@@ -609,8 +613,7 @@ label {
   border: 5px solid transparent;
   border-left-color: #b7bbbf;
   position: absolute;
-  padding-right: 26px;
-  left: 107%;
+  left: 110%;
   top: 50%;
   margin-top: -5px;
 }
